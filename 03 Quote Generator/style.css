@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Playfair", serif;
+}
+body {
+	background: #fff;
+}
+.quoteBox {
+	background: #fff;
+	width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.quoteBox h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.quoteBox h2::after {
+	content: "";
+	width: 75px;
+	height: 3px;
+	border-radius: 3px;
+	background: #212121;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.quoteBox blockquote {
+	font-size: 26px;
+	min-height: 110px;
+}
+.quoteBox blockquote::before,
+.quoteBox blockquote::after {
+	content: '"';
+}
+.quoteBox span {
+	display: block;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+.quoteBox span::before {
+	content: "";
+	width: 20px;
+	height: 2px;
+	background: #212121;
+	position: absolute;
+	top: 50%;
+	left: -30%;
+}
+.quoteBox div {
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.quoteBox button {
+	background: #000;
+	color: #fff;
+	border-radius: 25px;
+	border: 2px solid #212121;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+}
+.quoteBox button img {
+	width: 25px;
+	margin-right: 10px;
+}
+.quoteBox button:nth-child(2) {
+	background: transparent;
+	color: #000;
+}
+.quoteBox button:hover {
+	background: #fff;
+	color: #000;
+}
+.quoteBox button:nth-child(2):hover {
+	background: #000;
+	color: #fff;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+	.quoteBox {
+		width: 400px;
+	}
+	.quoteBox h2 {
+		font-size: 25px;
+	}
+	.quoteBox blockquote {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 425px) {
+	.quoteBox {
+		width: 300px;
+	}
+	.quoteBox blockquote {
+		font-size: 16px;
+	}
+	.quoteBox button {
+		width: 140px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
