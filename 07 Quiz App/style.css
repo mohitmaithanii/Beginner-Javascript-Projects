@@ -5,7 +5,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 body {
-	background: #212121;
+	background: #fff;
 }
 .app {
 	background: #fff;
@@ -14,6 +14,7 @@ body {
 	margin: 100px auto 0;
 	border-radius: 10px;
 	padding: 30px;
+	box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .app h1 {
 	font-size: 25px;
@@ -35,13 +36,12 @@ body {
 	color: #222;
 	font-weight: 500;
 	width: 100%;
-	border: 1px solid #222;
+	border: 2px solid #222;
 	padding: 10px;
 	margin: 10px 0;
 	text-align: left;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: all 0.3s;
 }
 .btn:disabled {
 	cursor: no-drop;
