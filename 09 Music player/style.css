@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.musicPlayer {
+	border-radius: 20px;
+	background: #fff;
+	width: 90%; /* Adjusted width for responsiveness */
+	max-width: 400px; /* Added max-width for larger screens */
+	padding: 25px 35px;
+	box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+nav .circle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	color: #333;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.songImg {
+	width: 100%;
+	max-width: 220px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+}
+
+.musicPlayer h1 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+	margin-top: 20px;
+}
+
+.musicPlayer p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+}
+
+#progress {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 6px;
+	background: #333;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 8px solid #333;
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.controls div {
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+	background: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #000;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+	transform: scale(1.5);
+	background: #333;
+	color: #fff;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+	.musicPlayer {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.musicPlayer {
+		width: 95%;
+	}
+}
